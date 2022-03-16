@@ -17,14 +17,10 @@ interface FlagActiveIconProps {
 }
 
 function FlagActiveIcon(props: FlagActiveIconProps) {
+  // https://purecatamphetamine.github.io/country-flag-icons/3x2/BR.svg
   return (
     <div className='flex flex-row items-center w-full'>
-      <Image
-        src={`http://purecatamphetamine.github.io/country-flag-icons/3x2/${props.img}`}
-        alt={props.alt}
-        width={props.width}
-        height={props.height}
-      />
+      <Image src={`/images/lang/${props.img}`} alt={props.alt} width={props.width} height={props.height} />
       <div className='ml-3'>{props.alt}</div>
     </div>
   );
