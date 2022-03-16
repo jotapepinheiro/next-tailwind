@@ -1,11 +1,10 @@
 import type { NextPage } from 'next';
-import Contact from '../../components/Contact';
 import Layout from '../../components/Layout';
 
 const RafflesNames: NextPage = () => {
   return (
     <Layout>
-      <Contact />
+      <h1 className='animate-pulse'>Sorteios de Nomes</h1>
     </Layout>
   );
 };
