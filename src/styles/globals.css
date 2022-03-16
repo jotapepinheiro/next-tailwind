@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #f9fafb;
+  --dark-color-background: #111827;
+}
+
+[class='dark'] {
+  --color-background: var(--dark-color-background);
+}
+
+@layer base {
+  html,
+  body {
+    @apply font-sans;
+    background-color: var(--color-background);
+  }
+}
