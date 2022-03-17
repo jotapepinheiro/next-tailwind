@@ -26,7 +26,7 @@ export default function AccForm(props: FaqProps) {
       </div>
       <div
         className={`transition-max-height duration-700 ease-in-out overflow-hidden ${
-          expanded ? 'max-h-80' : 'max-h-0'
+          expanded ? 'max-h-96' : 'max-h-0'
         }`}
       >
         <div className='mt-5'>

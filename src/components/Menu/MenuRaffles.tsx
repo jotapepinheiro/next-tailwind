@@ -17,7 +17,7 @@ export default function MenuRaffles() {
   return (
     <Menu as='div' className='relative inline-block text-left'>
       <div>
-        <Menu.Button className='inline-flex justify-center w-full text-sm font-medium text-gray-500 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-500'>
+        <Menu.Button className='inline-flex py-2 justify-center w-full font-medium text-gray-500 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-500'>
           Nossos Sorteios
           <ChevronDownIcon className='-mr-1 ml-2 h-5 w-5' aria-hidden='true' />
         </Menu.Button>
@@ -32,7 +32,7 @@ export default function MenuRaffles() {
         leaveFrom='transform opacity-100 scale-100'
         leaveTo='transform opacity-0 scale-95'
       >
-        <Menu.Items className='origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-dark-light ring-1 ring-black ring-opacity-5 focus:outline-none'>
+        <Menu.Items className='origin-top-right z-10 absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-dark-light ring-1 ring-black ring-opacity-5 focus:outline-none'>
           <div className='py-1'>
             {raffles.map((raffle, index) => (
               <Menu.Item key={index}>

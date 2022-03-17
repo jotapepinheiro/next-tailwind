@@ -42,7 +42,7 @@ function MenuDefault() {
       <li>
         <MyLink
           href='/'
-          className='block py-2 pr-4 pl-3 text-gray-500 dark:text-gray-300 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0'
+          className='block py-2 pr-4 pl-3 text-gray-500 dark:text-gray-300 md:border-0 hover:text-orange-500 dark:hover:text-orange-500 md:p-0'
           aria-current='page'
         >
           Início
@@ -51,7 +51,7 @@ function MenuDefault() {
       <li>
         <MyLink
           href='#'
-          className='block py-2 pr-4 pl-3 text-gray-500 dark:text-gray-300 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0'
+          className='block py-2 pr-4 pl-3 text-gray-500 dark:text-gray-300 md:border-0 hover:text-orange-500 dark:hover:text-orange-500 md:p-0'
         >
           Preços
         </MyLink>
@@ -59,7 +59,7 @@ function MenuDefault() {
       <li>
         <MyLink
           href='#'
-          className='block py-2 pr-4 pl-3 text-gray-500 dark:text-gray-300 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0'
+          className='block py-2 pr-4 pl-3 text-gray-500 dark:text-gray-300 md:border-0 hover:text-orange-500 dark:hover:text-orange-500 md:p-0'
         >
           Como Funciona
         </MyLink>
@@ -68,10 +68,7 @@ function MenuDefault() {
         <MenuRaffles />
       </li>
       <li>
-        <MyLink
-          href='#'
-          className='block py-2 pr-4 pl-3 text-orange-500 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:text-orange-500 md:p-0'
-        >
+        <MyLink href='#' className='block py-2 pr-4 pl-3 text-orange-500 md:border-0 md:text-orange-500 md:p-0'>
           Entrar
         </MyLink>
       </li>

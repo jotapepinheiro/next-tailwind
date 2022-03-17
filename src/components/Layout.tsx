@@ -9,7 +9,7 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div className='flex flex-col h-screen justify-between'>
+    <div className='flex flex-col h-full sm:h-screen justify-between'>
       <Head>
         <title>Sorteio.com | Home</title>
         <link rel='icon' href='/favicon.ico' />
