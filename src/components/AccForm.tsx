@@ -15,7 +15,7 @@ export default function AccForm(props: FaqProps) {
   const [notRepeatResults, setNotRepeatResults] = useState(false);
 
   return (
-    <div className='flex flex-col p-3 cursor-pointer text-blue-500'>
+    <div className='flex flex-col cursor-pointer text-blue-500'>
       <div onClick={() => setExpanded(!expanded)} className='flex flex-row items-center'>
         {expanded ? (
           <ChevronUpIcon className='flex-none mr-2 w-5 h-8 text-blue-500' />
@@ -47,7 +47,7 @@ export default function AccForm(props: FaqProps) {
                       } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
                     />
                   </Switch>
-                  <Switch.Label className='ml-4 text-gray-600 dark:text-gray-300'>
+                  <Switch.Label className='ml-4 text-[11px] font-extralight sm:text-sm md:text-sm lg:text-sm xl:text-sm text-gray-600 dark:text-gray-300'>
                     Mostrar resultado em ordem crescente
                   </Switch.Label>
                 </div>
@@ -69,7 +69,7 @@ export default function AccForm(props: FaqProps) {
                       } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
                     />
                   </Switch>
-                  <Switch.Label className='ml-4 text-gray-600 dark:text-gray-300'>
+                  <Switch.Label className='ml-4 text-[11px] font-extralight sm:text-sm md:text-sm lg:text-sm xl:text-sm text-gray-600 dark:text-gray-300'>
                     Fazer contagem regressiva
                   </Switch.Label>
                 </div>
@@ -91,7 +91,7 @@ export default function AccForm(props: FaqProps) {
                       } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
                     />
                   </Switch>
-                  <Switch.Label className='ml-4 text-gray-600 dark:text-gray-300'>
+                  <Switch.Label className='ml-4 text-[11px] font-extralight sm:text-sm md:text-sm lg:text-sm xl:text-sm text-gray-600 dark:text-gray-300'>
                     Gerar link de resultados
                   </Switch.Label>
                 </div>
@@ -113,7 +113,7 @@ export default function AccForm(props: FaqProps) {
                       } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
                     />
                   </Switch>
-                  <Switch.Label className='ml-4 text-gray-600 dark:text-gray-300'>
+                  <Switch.Label className='ml-4  text-[11px] font-extralight sm:text-sm md:text-sm lg:text-sm xl:text-sm text-gray-600 dark:text-gray-300'>
                     Permitir números duplicados
                   </Switch.Label>
                 </div>
@@ -135,7 +135,9 @@ export default function AccForm(props: FaqProps) {
                       } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
                     />
                   </Switch>
-                  <Switch.Label className='ml-4 text-gray-600 dark:text-gray-300'>Não repetir resultados</Switch.Label>
+                  <Switch.Label className='ml-4 text-[11px] font-extralight sm:text-sm md:text-sm lg:text-sm xl:text-sm text-gray-600 dark:text-gray-300'>
+                    Não repetir resultados
+                  </Switch.Label>
                 </div>
               </Switch.Group>
             </div>
