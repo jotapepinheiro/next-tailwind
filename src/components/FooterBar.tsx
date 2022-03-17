@@ -32,7 +32,7 @@ function FooterBar(props: any) {
                   Sorteio de números{' '}
                   <img
                     src='/images/novo.svg'
-                    className='mr-3 h-10 inline-flex items-center justify-center'
+                    className='mr-3 h-10 animate-in zoom-in duration-700 inline-flex items-center justify-center'
                     alt='novo'
                   />
                 </a>
@@ -79,12 +79,15 @@ function FooterBar(props: any) {
               </div>
 
               <div className='ml-5'>
-                <button
+                <a
                   type='button'
+                  href='https://www.instagram.com/sorteio'
+                  target='_blank'
                   className='inline-block px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out'
+                  rel='noreferrer'
                 >
                   Seguir
-                </button>
+                </a>{' '}
               </div>
             </div>
           </div>
@@ -108,7 +111,12 @@ function FooterBar(props: any) {
 
         <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
           Desenvolvido por{' '}
-          <a href='https://www.instagram.com/joaopinheiro.dev' className='hover:underline'>
+          <a
+            href='https://www.instagram.com/joaopinheiro.dev'
+            target='_blank'
+            className='hover:underline'
+            rel='noreferrer'
+          >
             @joaopinheiro.dev
           </a>{' '}
           com muito ❤️

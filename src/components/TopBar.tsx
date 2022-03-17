@@ -17,7 +17,7 @@ function TopBar() {
         <button
           data-collapse-toggle='mobile-menu'
           type='button'
-          className='inline-flex items-center p-2 ml-3 text-gray-500 border border-dark-light rounded-lg md:hidden hover:bg-orange-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600'
+          className='inline-flex items-center p-2 ml-3 text-gray-500 border dark:border-dark-light rounded-lg md:hidden hover:bg-orange-500 hover:text-white'
           aria-controls='mobile-menu-2'
           aria-expanded='false'
           onClick={handleClick}
@@ -38,7 +38,7 @@ function TopBar() {
           <svg
             className={`${
               active ? 'visible' : 'hidden'
-            } w-6 h-6 rounded-lg md:hidden hover:bg-orange-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-600`}
+            } w-6 h-6 rounded-lg md:hidden hover:bg-orange-500 hover:text-white`}
             fill='currentColor'
             viewBox='0 0 20 20'
             xmlns='http://www.w3.org/2000/svg'
@@ -51,7 +51,10 @@ function TopBar() {
           </svg>
         </button>
 
-        <div className={`${active ? 'visible' : 'hidden'} w-full md:block md:w-auto`} id='mobile-menu'>
+        <div
+          className={`${active ? 'animate-in slide-in-from-top duration-500' : 'hidden'} w-full md:block md:w-auto`}
+          id='mobile-menu'
+        >
           <MenuDefault />
         </div>
       </div>
