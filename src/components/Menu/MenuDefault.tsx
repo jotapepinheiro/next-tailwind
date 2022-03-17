@@ -50,7 +50,7 @@ function MenuDefault() {
       </li>
       <li>
         <MyLink
-          href='#'
+          href='/prices'
           className='block py-2 pr-4 pl-3 text-gray-500 dark:text-gray-300 md:border-0 hover:text-orange-500 dark:hover:text-orange-500 md:p-0'
         >
           Preços
@@ -58,10 +58,10 @@ function MenuDefault() {
       </li>
       <li>
         <MyLink
-          href='#'
+          href='/faq'
           className='block py-2 pr-4 pl-3 text-gray-500 dark:text-gray-300 md:border-0 hover:text-orange-500 dark:hover:text-orange-500 md:p-0'
         >
-          Como Funciona
+          Como funciona
         </MyLink>
       </li>
       <li>

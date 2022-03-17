@@ -19,9 +19,9 @@ function Layout({ children }: LayoutProps) {
       </Head>
 
       <TopBar />
-      <main className='mb-auto bg-textura-light dark:bg-textura-dark bg-center h-full'>
+      <main className='mb-auto bg-textura-light dark:bg-textura-dark dark:bg-dark-light bg-center h-full'>
         <div className='flex items-center justify-center mt-10 mb-10'>
-          <div className='bg-white dark:bg-dark dark:border-dark-light dark:text-gray-300 p-5 sm:p-16 md:p-16 rounded-3xl shadow-2xl w-5/6 sm:w-5/6 md:w-main lg:w-main xl:w-main'>
+          <div className='min-h-[450px] bg-white dark:bg-dark dark:border-dark-light dark:text-gray-300 p-5 sm:p-16 md:p-16 rounded-3xl shadow-2xl w-5/6 sm:w-5/6 md:w-main lg:w-main xl:w-main'>
             {children}
           </div>
         </div>

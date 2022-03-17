@@ -45,7 +45,7 @@ const RafflesNumeric: NextPage = () => {
           className='w-full flex justify-center items-center text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm mt-5 px-5 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700'
         >
           Sortear
-          <ArrowRightIcon className='w-5 ml-4 mr-2 h-8 text-white' />
+          <ArrowRightIcon className='w-5 ml-3 mr-2 h-8 text-white' />
         </button>
 
         <div className='flex-auto mt-5 w-full p-2'>

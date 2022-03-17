@@ -6,7 +6,7 @@ function FooterBar(props: any) {
           <a href='/'>
             <img src='/images/logo.svg' className='h-5 m-auto sm:m-0 md:m-0 lg:m-0 xl:m-0' alt='sorteio.com' />
           </a>
-          <div className='mt-5 self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
+          <div className='mt-5 self-center text-2xl font-medium whitespace-nowrap dark:text-white'>
             <div className='text-sm text-gray-500 dark:text-gray-400 text-center sm:text-left md:text-left lg:text-left xl:text-left'>
               <p>
                 Copyright © 2022{' '}
@@ -21,7 +21,7 @@ function FooterBar(props: any) {
         <div className='w-full grid grid-cols-1 text-center gap-4 sm:text-left sm:gap-6 sm:grid-cols-2 md:text-left md:gap-4 md:grid-cols-2 lg:text-left lg:gap-4 lg:grid-cols-2 xl:text-left xl:gap-4 xl:grid-cols-4'>
           <div>
             <h2 className='mb-6 font-semibold text-gray-900 dark:text-white'>Nossos Sorteios</h2>
-            <ul className='text-sm text-gray-600 dark:text-gray-400'>
+            <ul className='text-sm font-medium text-gray-600 dark:text-gray-400'>
               <li className='mb-4'>
                 <a href='#' className='hover:underline'>
                   Sorteio no Instagram
@@ -41,7 +41,7 @@ function FooterBar(props: any) {
           </div>
           <div>
             <h2 className='mb-6 font-semibold text-gray-900 dark:text-white'>Suporte</h2>
-            <ul className='text-sm text-gray-600 dark:text-gray-400'>
+            <ul className='text-sm font-medium text-gray-600 dark:text-gray-400'>
               <li className='mb-4'>
                 <a href='#' className='hover:underline '>
                   Como Sortear?
@@ -56,7 +56,7 @@ function FooterBar(props: any) {
           </div>
           <div>
             <h2 className='mb-6 font-semibold text-gray-900 dark:text-white'>Assinante</h2>
-            <ul className='text-sm text-gray-600 dark:text-gray-400'>
+            <ul className='text-sm font-medium text-gray-600 dark:text-gray-400'>
               <li className='mb-4'>
                 <a href='#' className='hover:underline text-orange-500 dark:text-orange-500'>
                   Entrar
@@ -107,7 +107,11 @@ function FooterBar(props: any) {
         </div>
 
         <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
-          Desenvolvido por João Paulo com muito ❤️
+          Desenvolvido por{' '}
+          <a href='https://www.instagram.com/joaopinheiro.dev' className='hover:underline'>
+            @joaopinheiro.dev
+          </a>{' '}
+          com muito ❤️
         </span>
 
         <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>Versão 2.0</span>
