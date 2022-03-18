@@ -1,7 +1,7 @@
 import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, ChevronDownIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 const langs = [
   { alt: 'PT', img: 'BR.svg', bg: 'bg-green-500' },
@@ -26,11 +26,30 @@ function FlagActiveIcon(props: FlagActiveIconProps) {
   );
 }
 
-export default function MenuLang() {
-  const [selected, setSelected] = useState(langs[0]);
+function getStorageValue() {
+  if (typeof window !== 'undefined') {
+    const saved = localStorage.getItem('sorteiolang');
+    const langFilter = langs.filter((lang) => lang.alt === saved)[0];
+    return langFilter;
+  }
+}
 
-  return (
-    <div className='w-28'>
+export default function MenuLang() {
+  const [selected, setSelected] = useState(() => getStorageValue() || langs[0]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (selected) localStorage.setItem('sorteiolang', selected.alt);
+  }, [selected]);
+
+  const renderlangChange = () => {
+    if (!mounted) return null;
+
+    return (
       <Listbox value={selected} onChange={setSelected}>
         <div className='relative'>
           <Listbox.Button className='relative w-full py-1 pl-3 text-left text-gray-500 font-medium dark:text-gray-300 rounded-lg border border-gray-200 dark:border-dark-light cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500 sm:text-sm'>
@@ -71,6 +90,8 @@ export default function MenuLang() {
           </Transition>
         </div>
       </Listbox>
-    </div>
-  );
+    );
+  };
+
+  return <div className='w-28'>{renderlangChange()}</div>;
 }
