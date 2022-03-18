@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from '@heroicons/react/solid';
 import type { NextPage } from 'next';
+import Router from 'next/router';
 import AccForm from '../../components/AccForm';
 import Layout from '../../components/Layout';
 import MySelectNumber from '../../components/MySelectNumber';
@@ -43,6 +44,9 @@ const RafflesNumeric: NextPage = () => {
         <button
           type='button'
           className='w-full flex justify-center items-center text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm mt-5 px-5 py-2 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700'
+          onClick={() => {
+            Router.push('/count');
+          }}
         >
           Sortear
           <ArrowRightIcon className='w-5 ml-3 mr-2 h-8 text-white' />
