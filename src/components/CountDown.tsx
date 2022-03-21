@@ -60,12 +60,13 @@ function CountDown({
               cx='180'
               cy='180'
               r={mainRadius}
+              fill='none'
               strokeWidth={mainStrokeWidth}
               strokeLinejoin='round'
               strokeDasharray='6 29.9'
             />
             <circle
-              className='stroke-gray-100 stroke-[3] dark:stroke-dark-lighter'
+              className='stroke-[3] stroke-gray-100 dark:stroke-dark-lighter'
               cx='180'
               cy='180'
               r='130'
@@ -77,10 +78,15 @@ function CountDown({
                 cx='180'
                 cy='180'
                 r={childRadius}
+                fill='none'
                 strokeWidth={childStrokeWidth}
               />
               <circle
-                className={`${countdown && 'animate-count-30'} stroke-orange-500 dark:stroke-orange-500`}
+                className={`${countdown && 'animate-count-30'} ${
+                  timeLeft > 0 && timeLeft < 11
+                    ? 'stroke-red-500 dark:stroke-red-500'
+                    : 'stroke-orange-500 dark:stroke-orange-500'
+                } drop-shadow-lg`}
                 onAnimationEnd={() => {
                   setContDown(true);
                   Router.push('/raffles/numeric');
@@ -88,6 +94,7 @@ function CountDown({
                 cx='180'
                 cy='180'
                 r={childRadius}
+                fill='none'
                 strokeWidth={childStrokeWidth}
                 strokeDasharray={circleReference}
                 strokeDashoffset={circleReference}
@@ -95,7 +102,7 @@ function CountDown({
               />
             </g>
           </svg>
-          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl font-roboto font-extrabold text-orange-500'>
+          <div className='drop-shadow-md absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl font-roboto font-extrabold text-orange-500'>
             {timeLeft}
           </div>
         </div>
